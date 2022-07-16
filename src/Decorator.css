@@ -1,0 +1,14 @@
+@font-face {
+  font-family: GraphikAlt;
+  src: url(https://assets.cdnpandadoc.com/app/packages/www-next/fonts/GraphikAlt-Regular-Cy-Web-dc84988c13.woff2) format(woff2);
+}
+.pdcomp-decorator {
+  font-family: GraphikAlt,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+}
+.pdcomp-decorator * {
+  font-family: inherit;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
