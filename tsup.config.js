@@ -5,7 +5,6 @@ export default defineConfig({
   splitting: false,
   sourcemap: true,
   clean: true,
-  // loader: {
-  //   '.tsx': 'tsx'
-  // }
+  format: ['cjs', 'esm'],
+  dts: true,
 })
