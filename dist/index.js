@@ -30,7 +30,7 @@ module.exports = __toCommonJS(src_exports);
 var React = __toESM(require("react"));
 
 // src/css-utils.ts
-var prefix = "pdcompt-";
+var prefix = "pdcomp-";
 function cls(className) {
   return `${prefix}${className}`;
 }

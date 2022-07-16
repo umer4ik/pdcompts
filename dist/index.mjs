@@ -2,7 +2,7 @@
 import * as React from "react";
 
 // src/css-utils.ts
-var prefix = "pdcompt-";
+var prefix = "pdcomp-";
 function cls(className) {
   return `${prefix}${className}`;
 }
