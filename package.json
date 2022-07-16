@@ -9,7 +9,7 @@
     ".": {
       "require": "./dist/index.js",
       "import": "./dist/index.mjs",
-      "types": "./dist/index.d.ts"      
+      "types": "./dist/index.d.ts"
     }
   },
   "scripts": {
@@ -44,5 +44,6 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "files": ["dist/*.css"]
 }
