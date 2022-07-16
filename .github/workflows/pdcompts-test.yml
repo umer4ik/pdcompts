@@ -4,7 +4,7 @@ on:
     branches:
       - main
 jobs:
-  install:
+  Install:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -12,4 +12,4 @@ jobs:
         with:
           node-version: '16.15.1'
       - run: npm install
-      - run: echo "💻 Installed!"
+      - run: echo "💻 Dependencies are installed!"
