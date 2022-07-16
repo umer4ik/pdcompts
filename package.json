@@ -10,7 +10,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsup",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "test-storybook": "test-storybook"
   },
   "author": "",
   "license": "WTFPL",
@@ -23,11 +24,14 @@
     "@storybook/builder-webpack4": "^6.5.9",
     "@storybook/manager-webpack4": "^6.5.9",
     "@storybook/react": "^6.5.9",
+    "@storybook/test-runner": "^0.4.0",
     "@storybook/testing-library": "^0.0.13",
     "@types/react": "^18.0.15",
     "@types/react-dom": "^18.0.6",
     "autoprefixer": "^10.4.7",
     "babel-loader": "^8.2.5",
+    "chromatic": "^6.7.0",
+    "jest": "^27.5.1",
     "postcss": "^8.4.14",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -38,6 +42,10 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
-  "dependencies": {},
-  "files": ["dist/**/*"]
+  "files": [
+    "dist/**/*"
+  ],
+  "dependencies": {
+    "clsx": "^1.2.1"
+  }
 }
