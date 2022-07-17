@@ -16,6 +16,8 @@ jobs:
         run: npm install
       - name: Install playwrite ▶️
         run: npx playwright install --with-deps
+      - name: Build storybook 📕
+        run: npm run build-storybook
       - name: Run storybook test 🏃
         run: |
           npx concurrently -k -s first -n "SB,TEST" -c "magenta,blue" \
