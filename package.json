@@ -47,5 +47,6 @@
   ],
   "dependencies": {
     "clsx": "^1.2.1"
-  }
+  },
+  "readme": "readme.md"
 }
