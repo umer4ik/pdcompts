@@ -4,12 +4,23 @@ on:
     branches:
       - main
 jobs:
-  Install:
+  Test:
+    timeout-minutes: 5
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
           node-version: '16.15.1'
-      - run: npm install
-      - run: echo "💻 Dependencies are installed!"
+      - name: Install dependencies 🖥
+        run: npm install
+      - name: Install playwrite ▶️
+        run: npx playwright install --with-deps
+      - name: Build storybook 📕
+        run: npm run build-storybook
+      - name: Run storybook test 🏃
+        run: |
+          npx concurrently -k -s first -n "SB,TEST" -c "magenta,blue" \
+            "npx http-server storybook-static --port 6006 --silent" \
+            "npx wait-on tcp:6006 && npm run test-storybook"
+
